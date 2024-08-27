@@ -31,8 +31,8 @@ export const useAuth = () => {
             });
             return {
                 token: response.headers['authorization'],
-                user: userDataResponse.data,
-                email: userDataResponse.data.email
+                user: userDataResponse.data.data,
+                email: userDataResponse.data.data.email
             };
         },
         onSuccess: (data) => {
